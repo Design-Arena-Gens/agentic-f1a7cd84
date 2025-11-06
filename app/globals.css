@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #ffffff;
+  --color-fg: #0b1b12;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: var(--color-fg);
+  background: var(--color-bg);
+}
+
+.container-wrap {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-md bg-leaf-600 px-4 py-2 text-white shadow hover:bg-leaf-700 focus:outline-none focus:ring-2 focus:ring-leaf-400 focus:ring-offset-2 transition;
+}
+
+.section {
+  @apply py-16 sm:py-20;
+}
